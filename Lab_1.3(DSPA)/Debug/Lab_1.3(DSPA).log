@@ -1,0 +1,4 @@
+﻿  Lab_1.3(DSPA).cpp
+C:\Users\Фанис Нигамадянов\source\repos\Lab_1.3(DSPA)\Lab_1.3(DSPA)\Lab_1.3(DSPA).cpp(82,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Фанис Нигамадянов\source\repos\Lab_1.3(DSPA)\Lab_1.3(DSPA)\Lab_1.3(DSPA).cpp(85,9): warning C4101: 'value': unreferenced local variable
+  Lab_1.3(DSPA).vcxproj -> C:\Users\Фанис Нигамадянов\source\repos\Lab_1.3(DSPA)\Debug\Lab_1.3(DSPA).exe
