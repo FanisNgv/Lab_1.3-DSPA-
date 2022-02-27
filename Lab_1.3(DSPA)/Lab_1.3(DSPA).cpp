@@ -84,31 +84,45 @@ int main()
     int choice;
     int value;
     int how_many;
+    //int how_many_for_del;
+    //int how_many_for_add;
 
     while (true)
     {
         choice = rand() % 2;
         how_many = rand() % 3 + 1;
+        //how_many_for_del = rand() % 3 + 1;
+        //how_many_for_add = rand() % 4 + 1;
 
         if (choice)
         {
+            std::cout << "Добавляем в количестве " << how_many << " элементов" << std::endl;
             for (int i = 0; i < how_many; i++)
             {
                 enqueue(rand() % 26 + 65);
-            }                        
+            }
+            std::cout << std::endl;
         }
         else
         {
+            std::cout << "Удаляем в количестве " << how_many << " элементов" << std::endl;
             for (int i = 0; i < how_many; i++)
             {
+                if (isempty())
+                {
+                    std::cout << "Очередь пуста!" << std::endl;
+                    break;
+                }
                 dequeue();
             }
+            std::cout << std::endl;
         }            
 
-        std::cout << "Состояние очереди:" << std::endl;
+        std::cout << "Состояние очереди:" << std::endl << std::endl;
 
         showQueue();
-        Sleep(2500);
+        std::cout << std::endl;
+        Sleep(3500);
     }    
     
 }
